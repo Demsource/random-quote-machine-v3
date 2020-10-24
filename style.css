@@ -29,16 +29,19 @@
     font-family: 'Abril Fatface', cursive;
     font-size: 2em;
 }
-@media only screen and (max-width: 600px) {
-    #text {
-        font-size: 1em;
-    }
-}
 #author {
     font-family: 'Zilla Slab Highlight', cursive;
     font-size: 1.5em;
     text-align: right;
     margin-top: 1em;
+}
+@media only screen and (max-width: 600px) {
+    #text {
+        font-size: 1em;
+    }
+    #author {
+        font-size: .5em;
+    }
 }
 .buttons {
     display: flex;
