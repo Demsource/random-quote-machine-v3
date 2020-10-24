@@ -35,14 +35,6 @@
     text-align: right;
     margin-top: 1em;
 }
-@media only screen and (max-width: 600px) {
-    #text {
-        font-size: 1em;
-    }
-    #author {
-        font-size: .5em;
-    }
-}
 .buttons {
     display: flex;
     justify-content: space-between;
@@ -50,11 +42,13 @@
 }
 #tweet-quote {
     display: flex;
+    font-size: 1.5rem;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
     border-radius: 3px;
     height: 3rem;
+    width: 3rem;
     text-align: center;
     background-color: teal;
     color: white;
@@ -74,7 +68,23 @@
     opacity: 0.9;
 }
 #new-quote:focus {
-    outline: 1px solid #fff;
-    outline-offset: -4px;
+    outline: none;
 }
-  
+* {
+    transition: background-color 0.5s linear;
+}
+@media only screen and (max-width: 600px) {
+    #text {
+        font-size: 1em;
+    }
+    #author {
+        font-size: .5em;
+    }
+    #tweet-quote, #new-quote {
+        height: 1.5rem;
+        font-size: x-small;
+    }
+    #tweet-quote {
+        width: 1.5rem;
+    }
+}
