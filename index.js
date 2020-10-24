@@ -56,12 +56,12 @@ function App() {
             <div id="quote-box">
                 <div className="wrapper">
                     <div id="quote" style={{color}}>
-                        <p id="text">
+                        <h5 id="text">
                             {currentQuote ? 
                                 (<p>{currentQuote.text}</p>)
                             : (<p>Loading...</p>)
                             }
-                        </p>
+                        </h5>
                         <p id="author">
                             {currentQuote ? 
                                 (<span>&quot;{currentQuote.author || 'No Author'}&quot;</span>)
@@ -75,7 +75,7 @@ function App() {
                             id="tweet-quote"
                             style={{backgroundColor: color}}
                         >
-                            <span><i class="fab fa-twitter fa-1x"></i></span>
+                            <span><i className="fab fa-twitter fa-1x"></i></span>
                         </a>
                         <button id="new-quote" style={{backgroundColor: color}} onClick={getNewQuote}>New Quote</button>
                     </div>
