@@ -70,7 +70,7 @@ function App() {
                         </p>
                     </div>
                     <div className="buttons">
-                        <a href={'https://twitter.com/intent/tweet?text=' + encodeURI(currentQuote.text + ' - ' + currentQuote.author)}
+                        <a href={'https://twitter.com/intent/tweet?text=' + encodeURI(currentQuote.author ? currentQuote.text + ' - ' + currentQuote.author : currentQuote.text + ' - ' + 'No Author')}
                             target='_blank'
                             id="tweet-quote"
                             style={{backgroundColor: color}}
