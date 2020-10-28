@@ -5,4 +5,4 @@ Utilized:
 * colors added (in comparition to previous versions)
 * fontawesome
 * google-fonts
-                    ###### By Demo
+###### By Demo
